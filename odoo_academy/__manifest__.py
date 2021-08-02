@@ -7,7 +7,7 @@
         Academy Module to manage Training:
         - Courses
         - Sessions
-        -Attendees
+        - Attendees
     """,
     
     'author': 'PCA',
