@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="book_view_list" model="ir.ui.view">
+            <field name="name">library.book.list</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree string="Books">
+                    <field name="name"/>
+                    <field name="authors"/>
+                    <field name="genre"/>
+                    <field name="isbn"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="book_view_form" model="ir.ui.view">
+           <field name="name">library.book.form</field>
+           <field name="model">library.book</field>
+           <field name="arch" type="xml">
+               <form string="Books">
+                   <sheet>
+                       <h1><field name="name"/></h1>
+                       <group>
+                           <group>
+                               <field name="description"/>
+                           </group>
+                       </group>
+                       <group>
+                           <group>
+                               <field name="authors"/>
+                               <field name="editors"/>
+                               <field name="genre"/>
+                           </group>
+                           <group>
+                               <field name="edition_year"/>
+                               <field name="publisher"/>
+                               <field name="isbn"/>
+                           </group>
+                       </group>
+                       <notebook>
+                           <page string="Notes">
+                               <field name="notes"/>
+                           </page>
+                       </notebook>
+                   </sheet>
+               </form>
+           </field>
+        </record>
+        
+        <record id="book_view_search" model="ir.ui.view">
+            <field name="name">library.book.search</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="isbn"/>
+                    <field name="authors"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

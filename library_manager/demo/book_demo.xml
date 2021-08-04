@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="odoo_book_1" model="library.book">
+            <field name="name">Odoo for Dummies</field>
+            <field name="description">How to's for Odoo
+                Learn to make your own module and more!
+            </field>
+            <field name="authors">F. Pinckaers</field>
+            <field name="editors">F. Henron</field>
+            <field name="publisher">Odoo Ltd.</field>
+            <field name="edition_year">2018</field>
+            <field name="isbn">2000191949</field>
+            <field name="genre">Education</field>
+        </record>
+        <record id="odoo_book_2" model="library.book">
+            <field name="name">Odoo: Advanced Uses</field>
+            <field name="description">Guide for Odoo aimed at developers
+                Follow-up to 'Odoo for Dummies'
+            </field>
+            <field name="authors">F. Pinckaers</field>
+            <field name="editors">F. Henron</field>
+            <field name="publisher">Odoo Ltd.</field>
+            <field name="edition_year">2019</field>
+            <field name="isbn">2000192321</field>
+            <field name="genre">Education</field>
+        </record>
+        <record id="spy_book_1" model="library.book">
+            <field name="name">I Spy</field>
+            <field name="description">Searching puzzle book for kids!
+            </field>
+            <field name="authors">B. Xavier</field>
+            <field name="editors">N. Fitzgerald</field>
+            <field name="publisher">Fisherman Books</field>
+            <field name="edition_year">1998</field>
+            <field name="isbn">20001731002</field>
+            <field name="genre">Interactive</field>
+        </record>
+        <record id="wizard_of_oz" model="library.book">
+            <field name="name">The Wonderful Wizard of OZ</field>
+            <field name="description">Original book on the wizard of oz!
+            </field>
+            <field name="authors">L. Frank Baum</field>
+            <field name="editors">W. W. Denslow</field>
+            <field name="publisher">George Hill Company</field>
+            <field name="edition_year">1900</field>
+            <field name="isbn">19039135</field>
+            <field name="genre">Fantasy</field>
+        </record>
+        <record id="unfortunate_series_1" model="library.book">
+            <field name="name">The Bad Beginning</field>
+            <field name="description">A Series of Unfortunate Events
+                Book 1 of 13
+            </field>
+            <field name="authors">Daniel Handler</field>
+            <field name="editors">Brett Helquist</field>
+            <field name="publisher">HarperCollins</field>
+            <field name="edition_year">1999</field>
+            <field name="isbn">00603109198</field>
+            <field name="genre">Mystery</field>
+        </record>
+    </data>
+</odoo>

@@ -17,11 +17,15 @@
     
     'depends': ['base'],
     'data': [
-        
+        'security/library_groups.xml',
+        'security/library_security.xml',
+        'security/ir.model.access.csv',
+        'views/book_views.xml',
+        'views/library_menuitems.xml',
         
     ],
     'demo': [
-        
+        'demo/book_demo.xml',
         
     ],
 }
