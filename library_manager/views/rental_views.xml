@@ -43,7 +43,7 @@
             <field name="name">library.rental.map</field>
             <field name="model">library.rental</field>
             <field name="arch" type="xml">
-                <map res_partner="customer_id" default_order="rent_date">
+                <map res_partner="customer_id" default_order="rent_date" hide_name="true">
                     <field name="customer_id" string="Renter Name"/>
                 </map>
             </field>
