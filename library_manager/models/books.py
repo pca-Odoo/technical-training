@@ -19,7 +19,7 @@ class Books(models.Model):
     edition_year = fields.Integer(string='Year of Edition')
     isbn = fields.Char(string='ISBN')
     genre = fields.Char(string="Genre", required=True)
-    notes= fields.Text(string='Notes')
+    notes = fields.Text(string='Notes')
     
     @api.onchange('isbn')
     def _onchange_isbn_length(self):

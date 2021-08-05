@@ -15,12 +15,13 @@
     'category': 'training',
     'version': '0.1',
     
-    'depends': ['base'],
+    'depends': ['base','web_map'],
     'data': [
         'security/library_groups.xml',
         'security/library_security.xml',
         'security/ir.model.access.csv',
         'views/book_views.xml',
+        'views/rental_views.xml',
         'views/library_menuitems.xml',
         
     ],
