@@ -37,5 +37,5 @@ class Course(models.Model):
     @api.constrains('additional_fee')
     def _check_additional_fee(self):
         for record in self:
-            if record.additional_fee < 10.00:
+            if record.additional_fee and record.additional_fee < 10.00:
                 raise ValidationError('Additional fee must be higher than 10.00, found %s' % record.additional_fee)
