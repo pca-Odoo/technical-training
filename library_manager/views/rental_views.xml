@@ -45,6 +45,7 @@
             <field name="arch" type="xml">
                 <map res_partner="customer_id" default_order="rent_date" hide_name="true">
                     <field name="customer_id" string="Renter Name"/>
+                    <field name="book_id" string="Book"/>
                 </map>
             </field>
         </record>
