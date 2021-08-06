@@ -15,7 +15,7 @@
     'category': 'training',
     'version': '0.1',
     
-    'depends': ['sale','contacts'],
+    'depends': ['sale','website','contacts'],
     'data': [
         'security/academy_security.xml',
         'security/academy_groups.xml',
@@ -27,6 +27,7 @@
         'views/product_views_inherit.xml',
         'wizards/sale_wizard_view.xml',
         'reports/session_report_templates.xml',
+        'views/academy_web_templates.xml',
         
     ],
     'demo': [
