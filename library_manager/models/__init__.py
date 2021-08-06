@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from . import books
-from . import rentals
+from . import book
+from . import book_copy
+from . import rental

@@ -24,7 +24,7 @@ class Rentals(models.Model):
     
     book_id = fields.Many2one(string='Book',
                               required=True,
-                              comodel_name='library.book')
+                              comodel_name='library.book.copy')
     book_authors = fields.Text(string='Author(s)', related='book_id.authors')
     book_isbn = fields.Char(string='ISBN', related='book_id.isbn')
     
