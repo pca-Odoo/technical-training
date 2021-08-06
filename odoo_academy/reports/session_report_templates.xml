@@ -10,7 +10,7 @@
             <field name="name">Session Report</field>
             <field name="model">academy.session</field>
             <field name="report_type">qweb-html</field>
-            <field name="report_name" ref="report_session_document"/>
+            <field name="report_name" ref="odoo_academy.report_session_document"/>
             <field name="print_report_name">Session Report</field>
 <!--             <field name="file">odoo_academy.report_session</field> -->
         </record>
