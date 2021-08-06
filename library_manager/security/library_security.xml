@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="library_rule_librarian" model="ir.rule">
-        <field name="name">Librarian Full Access</field>
+    <record id="book_rule_customer" model="ir.rule">
+        <field name="name">Customer See Own Rentals</field>
         <field name="groups" eval="[(4, ref('library_group_customer'))]"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
@@ -10,13 +10,4 @@
         <field name="domain_force">[('customer_id','=',user.id)]</field>
         <field name="model_id" ref="model_library_rental"/>
     </record>
-
-<!--        <record id="library_rule_customer" model="ir.rule">
-        <field name="name">Customer Read only</field>
-        <field name="perm_read" eval="1"/>
-        <field name="perm_write" eval="0"/>
-        <field name="perm_create" eval="0"/>
-        <field name="perm_unlink" eval="0"/>
-        <field name="model_id" ref="model_library_book"/>
-    </record> -->
 </odoo>
