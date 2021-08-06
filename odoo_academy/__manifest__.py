@@ -26,6 +26,7 @@
         'views/sale_views_inherit.xml',
         'views/product_views_inherit.xml',
         'wizards/sale_wizard_view.xml',
+        'reports/session_report_templates.xml',
         
     ],
     'demo': [
