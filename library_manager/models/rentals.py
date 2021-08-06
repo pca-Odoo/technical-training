@@ -25,8 +25,8 @@ class Rentals(models.Model):
     book_id = fields.Many2one(string='Book',
                               required=True,
                               comodel_name='library.book')
-    book_authors = fields.Text(string='Author(s)', compute='_compute_book_authors')
-    book_isbn = fields.Char(string='ISBN', compute='_compute_book_isbn')
+    book_authors = fields.Text(string='Author(s)', related='book_id.authors')
+    book_isbn = fields.Char(string='ISBN', related='book_id.isbn')
     
     @api.depends('rent_date', 'rent_return')
     def _compute_rent_period(self):
@@ -40,11 +40,3 @@ class Rentals(models.Model):
     def _compute_returned(self):
         for record in self:
             record.returned = True if record.rent_return else False
-                
-    @api.onchange('book_id')
-    def _compute_book_isbn(self):
-        self.book_isbn = self.book_id.isbn if self.book_id else None
-                
-    @api.onchange('book_id')
-    def _compute_book_authors(self):
-        self.book_authors = self.book_id.authors if self.book_id else None
