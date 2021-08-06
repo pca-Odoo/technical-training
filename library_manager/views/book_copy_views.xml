@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="book_copy_view_list" model="ir.ui.view">
+            <field name="name">library.book.copy.list</field>
+            <field name="model">library.book.copy</field>
+            <field name="arch" type="xml">
+                <tree string="Book Copies" create="1" editable="top" multi_edit="1">
+                    <field name="reference"/>
+                    <field name="book_id" attrs="{'readonly': [('book_id','!=',False)]}"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

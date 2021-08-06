@@ -23,6 +23,7 @@
         'views/book_views.xml',
         'views/rental_views.xml',
         'views/library_menuitems.xml',
+        'views/book_copy_views.xml',
         
     ],
     'demo': [

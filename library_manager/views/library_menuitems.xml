@@ -19,6 +19,15 @@
             </field>
         </record>
         
+        <record id="book_copy_list_action" model="ir.actions.act_window">
+            <field name="name">Book Copies</field>
+            <field name="res_model">library.book.copy</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Register a book copy</p>
+            </field>
+        </record>
+        
         <menuitem name="Library Management"
                   id="menu_library"
                   sequence="1"/>
@@ -32,10 +41,16 @@
                   sequence="3"
                   action="book_list_action"/>
         
+        <menuitem name="Book Copies"
+                  parent="menu_library_sub"
+                  id="menu_book_copies"
+                  sequence="4"
+                  action="book_copy_list_action"/>
+        
         <menuitem name="Rentals"
                   parent="menu_library_sub"
                   id="menu_rentals"
-                  sequence="4"
+                  sequence="5"
                   action="rental_list_action"/>
     </data>
 </odoo>
